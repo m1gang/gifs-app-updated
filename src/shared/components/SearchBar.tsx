@@ -7,18 +7,18 @@ interface Props {
 
 const SearchBar = ({ placeholder = 'buscar', onQuery }: Props) => {
 
-    // const [query, setQuery] = useState('');
+    const [query, setQuery] = useState('');
 
-    // const handleSearch = () => {
-    //     onQuery(query);
-    //     setQuery('');
-    // }
+    const handleSearch = () => {
+        onQuery(query);
+        setQuery('');
+    }
 
-    // const handleKeyDwon = (event: KeyboardEvent<HTMLInputElement>) => {
-    //     if (event.key === 'Enter') {
-    //         handleSearch();
-    //     }
-    // }
+    const handleKeyDwon = (event: KeyboardEvent<HTMLInputElement>) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    }
 
     return (
         <div className="search-container">
