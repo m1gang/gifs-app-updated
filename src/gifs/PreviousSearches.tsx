@@ -1,10 +1,10 @@
 import type { FC } from "react";
 
-// interface Props {
-//     searches: string[];
+interface Props {
+    searches: string[];
 
-//     onLabelClick: (term: string) => void;
-// }
+    onLabelClick: (term: string) => void;
+}
 
 const PreviousSearches: FC<Props> = ({ searches, onLabelClick }) => {
     return (
