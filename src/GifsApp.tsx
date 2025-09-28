@@ -5,6 +5,7 @@ import { mockGifs } from './mock-data/gifs-mock'
 import { CustomHeader } from './shared/components/CustomHeader'
 import { useState } from 'react'
 import GifList from './gifs/components/GifList'
+import { getGifsByQuery } from './gifs/actions/get-gifs-by-query.action'
 
 export const GifsApp = () => {
     const [previousTerms, setPreviousTerms] = useState(['goku']);
@@ -13,13 +14,15 @@ export const GifsApp = () => {
         console.log({ term });
     }
 
-    const handleSearch = (query: string) => {
+    const handleSearch = async (query: string) => {
         const term = query.trim().toLowerCase();
         if (!term) return;
 
         if (previousTerms.includes(term)) return;
 
         setPreviousTerms([term, ...previousTerms,].slice(0, 8));
+        const gifs = await getGifsByQuery(query);
+        console.log(gifs);
 
     }
 
