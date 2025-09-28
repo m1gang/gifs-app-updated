@@ -1,9 +1,10 @@
-import GifList from './gifs/GifList'
-import PreviousSearches from './gifs/PreviousSearches'
+
+import PreviousSearches from './gifs/components/PreviousSearches'
 import SearchBar from './shared/components/SearchBar'
 import { mockGifs } from './mock-data/gifs-mock'
 import { CustomHeader } from './shared/components/CustomHeader'
 import { useState } from 'react'
+import GifList from './gifs/components/GifList'
 
 export const GifsApp = () => {
     const [previousTerms, setPreviousTerms] = useState(['goku']);
