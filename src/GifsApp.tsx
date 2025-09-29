@@ -10,6 +10,7 @@ import { getGifsByQuery } from './gifs/actions/get-gifs-by-query.action'
 export const GifsApp = () => {
     const [previousTerms, setPreviousTerms] = useState(['goku']);
 
+
     const handleTermClicked = (term: string) => {
         console.log({ term });
     }
@@ -23,6 +24,7 @@ export const GifsApp = () => {
         setPreviousTerms([term, ...previousTerms,].slice(0, 8));
         const gifs = await getGifsByQuery(query);
         console.log(gifs);
+
 
     }
 
