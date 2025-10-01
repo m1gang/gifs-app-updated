@@ -1,3 +1,5 @@
+import gifSearchLogo from '../../../public/gif-white-logo.png'
+
 interface Props {
     title: string;
     description?: string;
@@ -6,7 +8,10 @@ interface Props {
 export const CustomHeader = ({ title, description }: Props) => {
     return (
         <div className='content-center'>
-            <h1>{title}</h1>
+            <h1>
+                <img src={gifSearchLogo} alt="logo-gif-search" />
+                {title}
+            </h1>
             {
                 description && (
                     <p>{description}</p>
