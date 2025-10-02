@@ -21,7 +21,7 @@ describe('MyCounterApp', () => {
     test('should render the component', () => {
 
         render(<MyCounterApp />);
-        screen.debug();
+
         expect(screen.getByRole('heading', { level: 1 }).innerHTML).toContain(
             `counter:20`
         )
@@ -33,13 +33,15 @@ describe('MyCounterApp', () => {
 
     test('should call handled if button is clicked', () => {
 
+        render(<MyCounterApp />);
         const button = screen.getByRole('button', { name: '+1' });
+        console.log(button.innerHTML);
 
         fireEvent.click(button);
 
         expect(handleAddMock).toHaveBeenCalled();
-        expect(handleLessMock).toHaveBeenCalled();
-        expect(handleResetMock).toHaveBeenCalled();
+        expect(handleLessMock).not.toHaveBeenCalled();
+        expect(handleResetMock).not.toHaveBeenCalled();
 
     })
 
