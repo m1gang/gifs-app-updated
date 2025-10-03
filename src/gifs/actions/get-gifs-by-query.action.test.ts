@@ -5,7 +5,6 @@ import { getGifsByQuery } from "./get-gifs-by-query.action";
 import { giphyApi } from "../api/giphy.api";
 
 import { giphySearchResponseMock } from './../../../tests/mock/giphy.response.data'
-import { C } from "vitest/dist/chunks/reporters.d.BFLkQcL6.js";
 
 
 describe('get-gifs-by-query.action', () => {
