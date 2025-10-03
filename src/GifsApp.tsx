@@ -1,6 +1,6 @@
 
 import PreviousSearches from './gifs/components/PreviousSearches'
-import SearchBar from './shared/components/SearchBar'
+import { SearchBar } from './shared/components/SearchBar'
 // import { mockGifs } from './mock-data/gifs-mock'
 import { CustomHeader } from './shared/components/CustomHeader'
 import GifList from './gifs/components/GifList'

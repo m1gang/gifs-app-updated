@@ -5,7 +5,7 @@ interface Props {
     onQuery: (query: string) => void;
 }
 
-const SearchBar = ({ placeholder = 'buscar', onQuery }: Props) => {
+export const SearchBar = ({ placeholder = 'buscar', onQuery }: Props) => {
 
     const [query, setQuery] = useState('');
 
@@ -48,4 +48,4 @@ const SearchBar = ({ placeholder = 'buscar', onQuery }: Props) => {
     )
 }
 
-export default SearchBar
+
