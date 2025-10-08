@@ -71,3 +71,7 @@ export default defineConfig([
   },
 ])
 ```
+
+## Documentación de la API pública (ES)
+
+Consulta la guía completa de componentes, hooks, funciones y cliente HTTP en `docs/API_PUBLICA.es.md`.
