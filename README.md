@@ -195,4 +195,4 @@ Si tienes alguna pregunta o problema, por favor:
 
 ---
 
-⭐ ¡Si te gusta este proyecto, no olvides darle una estrella!
+⭐ ¡Si te gusta este proyecto, no olvides darle una estrella! Este es un proyecto del curso de React de Fernando Herrera en DevTalles.
